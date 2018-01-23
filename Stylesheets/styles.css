@@ -1,0 +1,46 @@
+body{
+  font-family: 'Cormorant Garamond', serif; background-color: #ffad8a; color:#5e5c63; margin: 0; padding: 0; outline: 0; border: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+.sidebar{
+  background-color: #5e5c63; color: #f4c6b1; font-size: 20; width: 30%; height: 100%;  float: left; display: inline-block;
+}
+
+.container{
+  background-color: #f4c6b1; color:#5e5c63; height: 100%; width: 70%; float: right; display: inline-block;
+}
+
+.intro{
+  background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: 200; border-radius: 25px;
+}
+
+p{
+  margin: 15px;
+}
+
+.dropdownMenu, .theDropContent{
+      border: none; text-decoration: none; color: #f4c6b1; height: 10px; width: 100%; margin:0; text-align: left; display: block;
+}
+
+.theDropContent a{
+  border: none; text-decoration: none; color: #f4c6b1; height: 10px; width: 100%; margin:0; text-align: left; display: block;
+}
+.theDropContent a:hover{
+  background-color: #9999;
+}
+
+.dropButton{
+  position: relative; display: inline-block; width: 100%; height: 35px;
+}
+
+.dropButton:hover, .dropButton:focus{
+  background-color: #9999; margin: 0; padding: 0;
+}
+
+.show{
+  display: block;
+}

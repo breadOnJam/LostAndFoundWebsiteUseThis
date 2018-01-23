@@ -2,29 +2,33 @@
   <head>
     <meta charset="utf-8">
     <title>very nice</title>
-    <link rel="stylesheet" href = "styles.css">
+    <link rel="stylesheet" href = "Stylesheets/styles.css">
+    <script src = "/Scripts/script.js"></script>
   </head>
 
 <body>
   <div class = "sidebar">
     <h1>LOST AND FOUND</h1>
     <nav>
-        <ul>
-          <a class = "sideButtons" href = "LostPage.html" title = "Lost"><br>Lost</br></a>
-
-          <a class = "sidebuttons" href = "FoundPage.html" title = "Found"><br>Found</br></a>
-
-          <a class = "sidebuttons" href = "AdoptPage.html" title = "Adopt"><br>Adopt</br></a>
-        </ul>
+      <div class = "dropdownMenu">
+        <button onclick="dropDownFunction()" class="dropButton">Lost</button>
+          <div id="myDrop" class="theDropContent">
+            <a href = "/Lost/Cats.html" title = "Cats"><br>Lost</br></a>
+            <a href = "/Lost/Dogs.html" title = "Dogs"><br>Found</br></a>
+            <a href = "/Lost/Others.html" title = "Others"><br>Adopt</br></a>
+          </div>
+      </div>
     </nav>
   </div>
 
   <div class = "container">
     <div class = "intro">
-      <p>This is the intro paragraph. plz work idk why the words are so close to the edge of the box idk how to fix it plz help aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa asdas sdas das saas dsadasdsdssadas i got it fixed :-)</p>
+      <p>This is the intro paragraph. </p>
     </div>
 
   </div>
 </body>
 
 </html>
+
+<!--draw speech bubbles(left and right)-->
