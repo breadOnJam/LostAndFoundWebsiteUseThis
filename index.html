@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>very nice</title>
     <link rel="stylesheet" href = "Stylesheets/styles.css">
-    <script src = "/Scripts/script.js"></script>
+    <script src = "Scripts/script.js"></script>
   </head>
 
 <body>
@@ -11,12 +11,30 @@
     <h1>LOST AND FOUND</h1>
     <nav>
       <div class = "dropdownMenu">
-        <button onclick="dropDownFunction()" class="dropButton">Lost</button>
-          <div id="myDrop" class="theDropContent">
-            <a href = "/Lost/Cats.html" title = "Cats"><br>Lost</br></a>
-            <a href = "/Lost/Dogs.html" title = "Dogs"><br>Found</br></a>
-            <a href = "/Lost/Others.html" title = "Others"><br>Adopt</br></a>
-          </div>
+        <div onclick="show(1)" class="dropButton">
+            <h1>Lost</h1>
+            <div id="lost">
+              <a href="Lost/Dogs.html" title="Lost Dogs">Dogs</a>
+              <a href="Lost/Cats.html" title="Lost Cats">Cats</a>
+              <a href="Lost/Others.html" title="Others">Others</a>
+            </div>
+        </div>
+        <div onclick="show(2)" class="dropButton">
+            <h1>Found</h1>
+            <div id="found">
+              <a href="Found/Dogs.html" title="Found Dogs">Dogs</a>
+              <a href="Found/Cats.html" title="Found Cats">Cats</a>
+              <a href="Found/Others.html" title="Others">Others</a>
+            </div>
+        </div>
+        <div onclick="show(0)" class="dropButton">
+            <h1>Adopt</h1>
+            <div id="adopt">
+              <a href="Adopt/Dogs.html" title="Adopt Dogs">Dogs</a>
+              <a href="Adopt/Cats.html" title="Adopt Cats">Cats</a>
+              <a href="Adopt/Others.html" title="Others">Others</a>
+            </div>
+        </div>
       </div>
     </nav>
   </div>
@@ -27,6 +45,18 @@
     </div>
 
   </div>
+  <script>
+    function show(num)
+    {
+      var onScreen;
+      if(num == 0) { onScreen = document.getElementById('adopt'); }
+      else if(num == 1) { onScreen = document.getElementById('lost'); }
+      else if(num == 2) { onScreen = document.getElementById('found'); }
+      if(onScreen.style.display == "block") { onScreen.style.display = "none"; }
+      else { onScreen.style.display = "block"; }
+    }
+
+  </script>
 </body>
 
 </html>
