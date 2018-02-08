@@ -3,19 +3,59 @@ body{
 }
 
 h1{
-  text-align: center;
+  text-align: center; border: 20px;
 }
 
 .sidebar{
-  background-color: #5e5c63; color: #f4c6b1; font-size: 20; width: 30%; height: 100%;  float: left; display: inline-block;
+  background-color: #5e5c63; color: #f4c6b1; font-size: 20; width: 20%; height: 100%;  float: left; display: inline-block;
 }
 
 .container{
-  background-color: #f4c6b1; color:#5e5c63; height: 100%; width: 70%; float: right; display: inline-block;
+  background-color: #f4c6b1; color:#5e5c63; height: 100%; width: 80%; float: right; display: inline-block; overflow: auto;
 }
 
 .intro{
   background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: 200; border-radius: 25px;
+}
+
+h2, h3{
+  text-align: center;
+}
+h2{
+  font-size: 35;
+}
+
+h3{
+  margin: 0; font-size: 30;
+}
+
+
+.columnLeftLost{
+   margin-top: 2%; margin-left: 3%; margin-right: 5%;padding: 3px; width: 40%; float: left;
+}
+
+.columnRightFound{
+  margin-top: 2%; margin-left: 5%; margin-right: 3%; padding: 3px; width: 40%; float: right;
+}
+
+img{
+  width: 70%; height: auto; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;  margin-top: 15%; margin-bottom: 10%;
+}
+.postBlock{
+  background-color: #ece3db; display: inline-block; border-radius: 25px; margin-top: 10%; margin-bottom: 10px;
+}
+
+.postContent{
+  text-align: left; display: block; margin-left: 10%; margin-right: auto;
+  margin-top: 10px; margin-bottom: 15px;
+}
+
+.login a{
+  width: auto; height: 40px; margin-top: 90%; margin-bottom: 10px; margin-left: 20px; margin-right: auto; text-decoration: none; color: #f4c6b1; display: inline-block; float: bottom;
+}
+
+nav{
+  height: 50%;
 }
 
 p{
