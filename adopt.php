@@ -1,5 +1,5 @@
 <?php
-require("../connect.php");
+require("connect.php");
 session_start();
 
 if(isset($_GET['pet'])) {
@@ -33,7 +33,7 @@ if(isset($_GET['pet'])) {
   </head>
 
   <body>
-    <a href="../index.html" title="home">Home</a>
+    <a href="index.html" title="home">Home</a>
     <?php echo $page; ?>
   </body>
 </html>
