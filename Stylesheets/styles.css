@@ -21,11 +21,19 @@ h1{
 }
 
 input[type=text]{
-  border: none; border-bottom: 2px solid #5e5c63; background-color: #ece3db; font-family: 'Cormorant Garamond', serif; outline-width: 0; color: #f4c6b1;
+  border: none; border-bottom: 2px solid #5e5c63; background-color: #ece3db; font-family: 'Cormorant Garamond', serif; outline-width: 0; color: #5e5c63; padding: 5px;
 }
+
 
 form{
   margin-left: 40%; margin-right: auto; margin-top: 50px;
+}
+
+button{
+   -webkit-transition-duration: 0.4s; transition-duration: 0.4s; margin-top: 20px; outline-width: 0; background-color: #ece3db; border: 1px solid #5e5c63; font-family: 'Cormorant Garamond', serif;  font-size: 16;
+}
+button:hover{
+  background-color: #f4c6b1; color: #ece3db;; border-color: #f4c6b1;
 }
 
 h1{
