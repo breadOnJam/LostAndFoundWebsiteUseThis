@@ -8,6 +8,10 @@ h1{
   text-align: center; border: 20px;
 }
 
+a{
+  text-decoration: none; color: #f4c6b1;
+}
+
 .sidebar{
   background-color: #5e5c63; color: #f4c6b1; font-size: 20; width: 20%; height: 100%;  float: left; display: inline-block; position:fixed;
 }
@@ -26,7 +30,7 @@ input[type=text]{
 
 
 form{
-  margin-left: 40%; margin-right: auto; margin-top: 50px;
+  margin-left: 40%; margin-right: auto; margin-top: 50px; padding-left: auto;
 }
 
 button{
