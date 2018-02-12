@@ -16,10 +16,21 @@ h1{
   background-color: #f4c6b1; color:#5e5c63; height: 100%; width: 80%; float: right; display: inline-block; overflow: auto;
 }
 
-.intro{
+.intro, .loginBox{
   background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: 200; border-radius: 25px;
 }
 
+input[type=text]{
+  border: none; border-bottom: 2px solid #5e5c63; background-color: #ece3db; font-family: 'Cormorant Garamond', serif; outline-width: 0; color: #f4c6b1;
+}
+
+form{
+  margin-left: 40%; margin-right: auto; margin-top: 50px;
+}
+
+h1{
+  display: inline-block;
+}
 h2, h3{
   text-align: center;
 }
