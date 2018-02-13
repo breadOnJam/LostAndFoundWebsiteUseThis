@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lost and Found</title>
+  <link rel="stylesheet" href="Stylesheets/styles.css">
+  <script src="Scripts/script.js"></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <h1><a href="index.html">LOST AND FOUND</a></h1>
+    <nav>
+      <div class="dropdownMenu">
+        <div onclick="show(1)" class="dropButton">
+          <h2>Lost</h2>
+          <div id="lost">
+            <a href="Lost/DogsLogged.html" title="Lost Dogs">Dogs</a>
+            <a href="Lost/Cats.html" title="Lost Cats">Cats</a>
+            <a href="Lost/Others.html" title="Others">Others</a>
+          </div>
+        </div>
+        <div onclick="show(2)" class="dropButton">
+          <h2>Found</h2>
+          <div id="found">
+            <a href="Found/Dogs.html" title="Found Dogs">Dogs</a>
+            <a href="Found/Cats.html" title="Found Cats">Cats</a>
+            <a href="Found/Others.html" title="Others">Others</a>
+          </div>
+        </div>
+        <div onclick="show(0)" class="dropButton">
+          <h2>Adopt</h2>
+          <div id="adopt">
+            <a href="Adopt/Dogs.html" title="Adopt Dogs">Dogs</a>
+            <a href="Adopt/Cats.html" title="Adopt Cats">Cats</a>
+            <a href="Adopt/Others.html" title="Others">Others</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="login">
+      <a href="Login.html" title="Login">Login</a>
+      <a href="Register.html" title="Register">Register</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="intro">
+      <p>Welcome i_pet_dogs! <br><br>To make a post in the designated area, browse to the section and click on the "POST" button on the top right corner.</br>
+      </p>
+    </div>
+
+    <h2>- RECENT -</h2>
+
+    <div class="columnLeftLost">
+      <h3>- Lost -</h3>
+      <div class="postBlock">
+        <img src="Images/sampleLost1.png" alt="LOST DOG">
+        <div class="postContent">
+          Name: Buster
+          <br>Date Missing: Jan 29, 2018
+          <br>Last seen Location: StreetName Ave.
+          <br>- More Info -</br>
+        </div>
+      </div>
+
+      <div class="postBlock">
+        <img src="Images/sampleLost2.jpeg" alt="LOST CAT">
+        <div class="postContent">
+          Name: Kookie
+          <br>Date Missing: Jan 2, 2018
+          <br>Last seen Location: StreetName2 Rd.
+          <br>- More Info -</br>
+        </div>
+      </div>
+
+      <div class="postBlock">
+        <img src="Images/sampleLost3.jpeg" alt="LOST CAT">
+        <div class="postContent">
+          Name: Chubby
+          <br>Date Missing: Dec 3, 2017
+          <br>Last seen Location: StreetName3 Ct.
+          <br>- More Info -</br>
+        </div>
+      </div>
+    </div>
+
+    <div class="columnRightFound">
+      <h3>- Found -</h3>
+      <div class="postBlock">
+        <img src="Images/sampleFound1.jpg" alt="FOUND DOG">
+        <div class="postContent">
+          Name: Mochi
+          <br>Date Found: Feb 3, 2018
+          <br>Found Location: StreetName4 Ave.
+          <br>- More Info -</br>
+        </div>
+      </div>
+
+      <div class="postBlock">
+        <img src="Images/sampleFound2.jpg" alt="FOUND CAT">
+        <div class="postContent">
+          Name: (unknown, no tag)
+          <br>Date Found: Jan 6, 2018
+          <br>Found Location: StreetName5 Ave.
+          <br>- More Info -</br>
+        </div>
+      </div>
+
+      <div class="postBlock">
+        <img src="Images/sampleFound3.jpg" alt="FOUND DOG">
+        <div class="postContent">
+          Name: (unknown, no tag)
+          <br>Date Found: Dec 29, 2017
+          <br>Found Location: StreetName6 Ave.
+          <br>- More Info -</br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script>
+    function show(num) {
+      var onScreen;
+      if (num == 0) {
+        onScreen = document.getElementById('adopt');
+      } else if (num == 1) {
+        onScreen = document.getElementById('lost');
+      } else if (num == 2) {
+        onScreen = document.getElementById('found');
+      }
+      if (onScreen.style.display == "block") {
+        onScreen.style.display = "none";
+      } else {
+        onScreen.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>

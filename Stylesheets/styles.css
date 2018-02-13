@@ -21,11 +21,15 @@ a{
 }
 
 .intro, .loginBox{
-  background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: 200; border-radius: 25px;
+  background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: auto; border-radius: 25px;
 }
 
 input[type=text]{
   border: none; border-bottom: 2px solid #5e5c63; background-color: #ece3db; font-family: 'Cormorant Garamond', serif; outline-width: 0; color: #5e5c63; padding: 5px;
+}
+
+input[name=password]{
+  -webkit-text-security: disc;
 }
 
 
@@ -33,11 +37,22 @@ form{
   margin-left: 40%; margin-right: auto; margin-top: 50px; padding-left: auto;
 }
 
-button{
-   -webkit-transition-duration: 0.4s; transition-duration: 0.4s; margin-top: 20px; outline-width: 0; background-color: #ece3db; border: 1px solid #5e5c63; font-family: 'Cormorant Garamond', serif;  font-size: 16;
+.button, .button2, .button3{
+   -webkit-transition-duration: 0.4s; transition-duration: 0.4s; margin-top: 20px; outline-width: 0; background-color: #ece3db; border: 1px solid #5e5c63; font-family: 'Cormorant Garamond', serif;  font-size: 16; border-radius: 5px;
 }
-button:hover{
+.button:hover, .button2:hover, .button3:hover{
   background-color: #f4c6b1; color: #ece3db;; border-color: #f4c6b1;
+}
+.button, .button2, .button3{
+  background-color: #5e5c63; border: 1px solid #5e5c63; font-family: 'Cormorant Garamond', serif;  font-size: 16; border-radius: 5px; padding: 5px;
+}
+
+.button2{
+  margin-top:5; display: inline-block;
+}
+
+.button3{
+  margin-left: 88%; margin-right: 20; display: inline-block;
 }
 
 h1{
@@ -54,6 +69,17 @@ h3{
   margin: 0; font-size: 30;
 }
 
+.nextAndPrev{
+  position: auto; bottom: 20px; width: 100%; margin-top:20; height: 20px;
+}
+
+.nextPage{
+    margin-left: 85%; margin-bottom: 0;
+}
+
+.backPage{
+  margin-right: 80%; margin-left: 5%; margin-bottom: 20;
+}
 
 .columnLeftLost{
    margin-top: 2%; margin-left: 3%; margin-right: 5%;padding: 3px; width: 40%; float: left;
@@ -74,8 +100,13 @@ img{
   margin-top: 10px; margin-bottom: 15px;
 }
 
-.login { width:100%; height:40px; position:absolute; bottom:10px; text-align:center; }
-.login a { margin:5px; text-decoration:none; color:#f4c6b1; display:inline-block; }
+.login {
+  width:100%; height:40px; position:absolute; bottom:10px; text-align:center;
+}
+
+.login a {
+  margin:5px; text-decoration:none; color:#f4c6b1; display:inline-block;
+}
 
 nav{
   height: 50%;
