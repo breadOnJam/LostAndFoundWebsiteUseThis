@@ -20,8 +20,16 @@ a{
   background-color: #f4c6b1; color:#5e5c63; height: 100%; width: 80%; float: right; display: inline-block; overflow: auto;
 }
 
-.intro, .loginBox{
+.intro, .loginBox, .toPost{
   background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: auto; border-radius: 25px;
+}
+
+.toPost{
+  margin-top: 10; background-color: #ece3db;
+}
+
+input[type=textBox]{
+  margin-left: 10; padding: 20; margin:10; height: 50;
 }
 
 input[type=text]{
