@@ -1,0 +1,76 @@
+<hmtl>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="../Stylesheets/styles.css">
+    <script src="../Scripts/script.js"></script>
+  </head>
+
+<body>
+
+  <div class="sidebar">
+    <h1><a href="../index.html">LOST AND FOUND</a></h1>
+    <nav>
+      <div class="dropdownMenu">
+        <div onclick="show(1)" class="dropButton">
+          <h2>Lost</h2>
+          <div id="lost">
+            <a href="../Lost/DogsLogged.html" title="Lost Dogs">Dogs</a>
+            <a href="../Lost/CatsLogged.html" title="Lost Cats">Cats</a>
+            <a href="../Lost/OthersLogged.html" title="Others">Others</a>
+          </div>
+        </div>
+        <div onclick="show(2)" class="dropButton">
+          <h2>Found</h2>
+          <div id="found">
+            <a href="Dogs.html" title="Found Dogs">Dogs</a>
+            <a href="Cats.html" title="Found Cats">Cats</a>
+            <a href="Others.html" title="Others">Others</a>
+          </div>
+        </div>
+        <div onclick="show(0)" class="dropButton">
+          <h2>Adopt</h2>
+          <div id="adopt">
+            <a href="../Adopt/Dogs.html" title="Adopt Dogs">Dogs</a>
+            <a href="../Adopt/Cats.html" title="Adopt Cats">Cats</a>
+            <a href="../Adopt/Others.html" title="Others">Others</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="login">
+      <a href="Login.html" title="Login">Login</a>
+      <a href="Register.html" title="Register">Register</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 style="font-size: 25">- POST TO: FOUND OTHERS -</h2>
+    <div class="textPost">
+      <div class="postAnimal">
+        Name of Animal:
+        <input type="text" name=textBox>
+      </div>
+      <div class="postAnimal">
+        Date Found:
+        <input type="text" name=textBox>
+      </div>
+      <div class="postAnimal">
+        Found Location:
+        <input type="text" name=textBox>
+      </div>
+      <div class="postAnimal">
+        Picture of Animal:
+        <input type="file" name=picFile>
+      </div>
+
+      <div class="submit">
+        <a class="button" href="OthersLogged.html">POST</a>
+    </div>
+    </div>
+
+  </div>
+</body>
+</html>
