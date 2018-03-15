@@ -20,6 +20,7 @@ a{
   background-color: #f4c6b1; color:#5e5c63; height: 100%; width: 80%; float: right; display: inline-block; overflow: auto;
 }
 
+<<<<<<< HEAD
 .intro, .loginBox, .toPost{
   background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: auto; border-radius: 25px;
 }
@@ -30,6 +31,14 @@ a{
 
 input[type=textBox]{
   margin-left: 10; padding: 20; margin:10; height: 50;
+=======
+.intro, .loginBox, .textPost{
+  background-color: #ece3db; margin: 5%; padding: 1; width: 90%; height: auto; border-radius: 25px;
+}
+
+.postAnimal{
+  margin:20;
+>>>>>>> b0b31493a541ad9c1b612019ab8af2668a08c1ae
 }
 
 input[type=text]{
@@ -38,6 +47,14 @@ input[type=text]{
 
 input[name=password]{
   -webkit-text-security: disc;
+}
+
+input[name=textBox]{
+  margin-left: 20px; min-width: 70%; right: 10%; display: inline-block; overflow: auto;
+}
+
+input[type=file]{
+  margin:10; font-family: 'Cormorant Garamond', serif;
 }
 
 
@@ -81,8 +98,12 @@ h3{
   position: auto; bottom: 20px; width: 100%; margin-top:20; height: 20px;
 }
 
-.nextPage{
-    margin-left: 85%; margin-bottom: 0;
+.nextPage {
+    margin-left: 85%; margin-bottom: 10;
+}
+
+.submit{
+  margin-left: 85%; margin-bottom: 5;
 }
 
 .backPage{
